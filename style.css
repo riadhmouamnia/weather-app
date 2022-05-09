@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700;800&display=swap');
+
+body {
+    font-family: Montserrat,sans-serif;
+    font-weight: 300;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+label {
+    display: block;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 0.5em;
+    cursor: pointer;
+    margin-top: 0.4em;
+}
+@media only screen and (max-width: 600px) {
+    .card{
+        max-width: 320px;
+        
+    }
+}
+
+.card {
+    background-color: #0000009d;
+    padding: 1.5em;
+    border-radius: 1em;
+    width: 450px;
+    box-shadow: 2px 2px 10px #00000070;
+}
+
+form {
+    text-align: center;
+}
+
+form button, input {
+    background: none;
+    color: #eee;
+   
+}
+input {
+    font-size: 1.2em;
+    flex: 1 1 0%;
+    width: 100%;
+    padding:0.4em;
+    padding-left:0.1em;
+}
+form button {
+    padding-left: 1em;
+    padding-top: 0.4em;
+    cursor: pointer;
+}
+svg {
+    margin: 0.3em;
+    color: rgba(238, 238, 238, 0.486);
+}
+.search-wrapper {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background: #00000035;
+    border-radius: 1.5em;
+}
+
+.search-wrapper:hover {
+    background: #00000070;
+}
+
+
+.weather {
+    margin-top: 0.4em;
+}
+/* .weather.hidden{
+    visibility:hidden;
+    position: relative;
+}
+.hidden:after{
+    visibility: visible;
+    content: "Loading...";
+    color: #eee;
+    transition: 0.5s ease-in-out;
+} */
+.icon {
+    width: 2em;
+}
+.description {
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    height: 1.7em;
+}
+
+
+h2 {
+    padding-bottom: 0.25em;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.temp{ 
+    font-size: 3.5em;
+    font-weight: 200;
+    
+}
+.weather-description p {
+    padding: 0.1em;
+}
