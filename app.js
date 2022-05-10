@@ -27,6 +27,8 @@ const updateUi = (data) => {
     </article></div>    
     `
     weatherDetails.classList.remove('hidden');
+    document.body.style.backgroundImage =
+      "url('https://source.unsplash.com/1600x900/?" + name + "')";
 };
 
 search.addEventListener('submit', e => {
