@@ -22,8 +22,8 @@ const updateUi = (data) => {
       <p class="description">
       <img src="https://openweathermap.org/img/wn/${icon}.png" alt="weather icon" class="icon" />
       ${description}y</p>
-      <p class="humidity">${humidity}%</p>
-      <p class="wind">${speed}km/h</p>
+      <p class="humidity">Humidity: ${humidity}%</p>
+      <p class="wind">Wind speed: ${speed} km/h</p>
     </article></div>    
     `
     weatherDetails.classList.remove('hidden');
